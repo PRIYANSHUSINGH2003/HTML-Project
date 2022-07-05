@@ -1,0 +1,289 @@
+<HTML>
+<head>
+    <meta mane="viewpoint" comtent="with=device-width, initial-scale+1.0">
+
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqNE-JQG0ghWLvM_6dybmz6x1z1s5AyK3MTg&usqp=CAU');
+            background-size: cover;
+            border: 50px;
+
+        }
+        div img.logo{
+            flex: 1;
+            text-align: right;
+            width: 170px;
+            position: absolute;
+            left: 87%;
+        }
+        ul li:hover{
+            transform:scale(1.05);
+}
+        ol li.heading{
+            font-size: 20px;
+        }
+        ol li.heading ::after{
+            content: "";
+            width: 0%;
+            height: 3px;
+            background-color: red;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        ol li.heading :hover::after{
+        width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fuild">
+        <div class="row bg-dark">
+            <div class="col">
+            <ol class="list-inline py-1 mt-2">
+                <li class="list-inline-item ps-3 heading"><a id="home" class="text-decoration-none text-light"  href="#">HOME</a></li>
+                <li class="list-inline-item ps-5 heading"><a id="about" class="text-decoration-none text-warning" href="#">ABOUT</a></li>
+                <li class="list-inline-item ps-5 heading"><a id="act" class="text-decoration-none text-info" href="#">ACTIVITY</a></li>
+                <li class="list-inline-item ps-5 heading"><a id="notice" class="text-decoration-none text-white" href="#">NOTICE</a></li>
+            </ol>
+        </div>
+        <div class="col">
+            <a href="#"><img id="logo" src="data:image/png;base64,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" alt="logo" class="img-fluid logo img-thumbnail border border-4 border-warning ms-1 shadow"></a>
+        </div>
+    </div>
+    </div>
+        <hr>
+        <div class="container-fluid">
+            <div class="row">
+                    <div class="col">
+                    <p id="para3" class="fst-italic">First developed by <mark class="text-muted fw-bold"> Tim Berners-Lee </mark> in 1990, HTML is short for Hypertext<b>Markup Language</b>. HTML is used to create electronic documents (called pages that are displayed on the <mark class="fw-bold font-monospace"> World Wide Web.</mark> Each page contains a series of connections to other pages called hyperlinks. Every web page you see was written using one version of<code> HTML</code>.</p>
+                </div>
+                <div class="col">
+            <img src="https://pbs.twimg.com/media/DRfhrzRUIAAT_tS.jpg" alt="hTML invented" onmouseover="img();" style="width:350px;" id="img" class="ms-5 img-fluid rounded-circle img-thumbnail p-3 shadow-lg">
+        </div>
+    </div>
+            <p id="para2"><em>HTML code ensures the proper formatting of text and images for your Internet browser. Without HTML, a browser would not know how to display text as elements or load images or other elements. HTML also provides a basic structure of the page, upon which Cascading Style Sheets are overlaid to change its appearance. One could think of HTML as the bones (structure) of a web page, and <code>CSS </code>as its skin (appearance).</em></p>
+            <div class="container">
+            <h2 onmouseout="color()" id="h1" class="bg-dark text-warning ps-3 border border-5">What is HTML?</h2>
+            <p>
+            <ul class="bg-dark border border-4 border-danger shadow-lg">
+                <li class="fw-bold lead fst-italic bg-dark text-light ps-3 border border-4 border-warning"> HTML stands for Hyper Text Markup Language</li>
+                <li class="lead fw-bold fst-italic bg-dark text-light ps-3 border border-4 border-warning"> HTML is the standard markup language for creating Web pages
+                </li>
+                <li class="fw-bold lead fst-italic bg-dark text-light ps-3 border border-4 border-warning"> HTML describes the structure of a Web page
+                </li>
+                <li class="fw-bold lead fst-italic bg-dark text-light ps-3 border border-4 border-warning"> HTML consists of a series of elements
+                </li>
+                <li class="fw-bold lead fst-italic bg-dark text-light ps-3 border border-4 border-warning"> HTML elements tell the browser how to display the content
+                </li>
+                <li class="fw-bold lead fst-italic bg-dark text-light ps-3 py-2 border border-4 border-warning"> HTML elements label pieces of content such as <mark> "this is a heading", "this is aparagraph", "this is a link", etc. </mark>
+                </li>
+            </ul>
+            </p>
+            <h2 onmouseout="color1()"id="h1-1" class="bg-dark text-warning ps-3 fw-bold border border-5 shadow-lg">What is an HTML Element?
+            </h2>
+            <p id="para1">An HTML element is defined by a start tag, some content, and an end tag: <code> < tagname> </code>Content goes <code> < /tagname></code> The HTML <b>element</b> is everything from the start tag to the end tag</p>
+            <h2 onmouseout="color2()" id="h1-2" class="bg-dark fw-bold text-warning ps-3 border border-5 shadow-lg">HTML Attributes</h2>
+            <p>
+            <ul class="bg-dark border border-4 border-warning shadow-lg">
+                <li class="fw-bold lead fst-italic bg-dark text-light ps-3 border border-4 border-danger py-1"> HTML elements can have attributes</li>
+                <li class="fw-bold lead fst-italic bg-dark text-light ps-3 border border-4 border-danger py-1"> Attributes provide additional information about the element</li>
+                <li class="fw-bold lead fst-italic bg-dark text-light ps-3 border border-4 border-danger py-1"> Attributes come in name/value pairs like <code> charset="utf-8"( The HTML5 </code></li>
+                <li class="fw-bold lead fst-italic bg-dark text-light ps-3 border border-4 border-danger py-1">specification encourages web developers to use the UTF-8 character set,</li>
+                <li class="fw-bold lead fst-italic bg-dark text-light ps-3 border border-4 border-danger py-1"> which covers almost all of the characters and symbols in the world).</li>
+            </ul>
+            </p>
+            <div class="container text-center">
+            <h2 onmouseout="color3()" id="h1-3" class="bg-dark fw-bold text-warning border border-5 border-danger my-3 shadow">HTML Tags</h2>
+            <img id="code" onmouseleave="code()" src="https://www.homeandlearn.co.uk/WD/images/chapter3/template_html.gif"alt="https://www.homeandlearn.co.uk/WD/images/chapter3/template_html.gif" style="width: 650px;" class="img-fluid border border-5 border-warning mb-3">
+        </div>
+        </div>
+    </blockquote>
+    <figcaption class="blockquote-footer h5 fw-bold bg-dark text-danger border border-4 border-info shadow text-end ">Introduction <code> HTML </code><Code>CSS</Code> <Code>JAVASCRIPT</Code> <cite title="source title"> by Priyanshu Singh</cite></figcaption>
+</figure>
+    </div>
+    <div class="container-fluid pt-2 text-light border border-4 border-dark bg-dark">
+        <div class="row">
+            <div class="col-sm-4 col-xs-4 col-lg-4 col-xl-4 col-xxl-4">
+        <h4>Contact Us</h4>
+        <p> 123 Main Street, New York, NY 10030</p>
+        <p>email Id:- Rwcoaching123@gmail.com</p>
+        </div>
+    <div class="col-sm-4 col-xs-4 col-lg-4 col-xl-4 col-xxl-4">
+        <h4>Information</h4>
+        <ol>
+            <li>About Us</li>
+            <li>Admission</li>
+            <li>Fee Structure</li>
+        </ol>
+        </div>
+        <div class="col-sm-4 col-lg-4 col-xl-4 col-xxl-4">
+            <h4>Student Zone</h4>
+            <ol>
+                <li>RW coaching</li>
+                <li>Code of Conduct</li>
+                <li>Ragging</li>
+                <li>HTML Tutorial</li>
+            </ol>
+            </div>
+            <div class="col-sm-4 col-lg-4 col-xl-4 col-xxl-4">
+        <img src="https://www.etrainstatus.com/static/assets/template/etrainstatus/desktop/images/google_play.webp" alt="google image">
+        <button id="btn" class="btn btn-lg btn-primary btn-outline-danger text-white fw-bold fst-italic">Learning</button>
+    </div>
+    </div>
+</div>
+</body>
+<script>
+    var type='off';
+    function img()
+    {
+        if(type=='on')
+        {
+            type='off'
+            document.getElementById('img').src='https://pbs.twimg.com/media/DRfhrzRUIAAT_tS.jpg';
+        }
+        else
+        {
+            type='on';
+            document.getElementById('img').src='https://www.kidpaw.com/data/people/british/kidpaw-tim-berners-lee-5574.jpg';
+        }
+        document.getElementById('img').value=type;
+    }
+    document.getElementById('home').onclick=home;
+    function home()
+    {
+        alert("YOUR INTERNET NOT TOO GOOD PLEASE TRY AGAIN")
+    }
+    document.getElementById('about').onclick=about;
+    function about()
+    {
+        alert("YOUR INTERNET NOT TOO GOOD PLEASE TRY AGAIN")
+    }
+    document.getElementById('act').onclick=act;
+    function act()
+    {
+        alert("YOUR INTERNET NOT TOO GOOD PLEASE TRY AGAIN")
+    }
+    document.getElementById('notice').onclick=notice;
+    function notice()
+    {
+        alert("YOUR INTERNET NOT TOO GOOD PLEASE TRY AGAIN")
+    }
+    document.getElementById('btn').onclick=click;
+    function click()
+    {
+        alert("Yes your request is sending")
+    }
+    document.getElementById('logo').onmouseover=abc;
+    function abc()
+    {
+        document.getElementById('logo').style.filter='grayscale(0%)';
+    }
+    document.getElementById('logo').onmouseout=xyx;
+    function xyx()
+    {
+        document.getElementById('logo').style.filter='grayscale(100%)';
+    }
+    document.getElementById('para1').onmouseover=white;
+    function white()
+    {
+        document.getElementById('para1').style.color="white";
+    }
+    document.getElementById('para1').onmouseout=white1;
+    function white1()
+    {
+        document.getElementById('para1').style.color="black";
+    }
+    document.getElementById('para2').onmouseover=white2;
+    function white2()
+    {
+        document.getElementById('para2').style.color="white";
+    }
+    document.getElementById('para2').onmouseout=white3;
+    function white3()
+    {
+        document.getElementById('para2').style.color="black";
+    }
+    document.getElementById('para3').onmouseover=white4;
+    function white4()
+    {
+        document.getElementById('para3').style.color="white";
+    }
+    document.getElementById('para3').onmouseout=white5;
+    function white5()
+    {
+        document.getElementById('para3').style.color="black";
+    }
+    var code1='off';
+    function code()
+    {
+        if(code1=='on')
+        {
+            code1='off'
+            document.getElementById('code').src='https://www.wikihow.com/images/thumb/6/64/729927-31.jpg/aid729927-v4-1200px-729927-31.jpg';
+        }
+        else
+        {
+            code1='on';
+            document.getElementById('code').src='https://www.homeandlearn.co.uk/WD/images/chapter3/template_html.gif';
+        }
+        document.getElementById('code').value=code1;
+    }
+    function color()
+    {
+        var h1 = document.getElementById('h1');
+        if(h1.className=="bg-dark text-danger ps-3 border border-5 rounded-pill")
+        {
+            h1.className="bg-warning text-dark ps-3 border border-5 border-info";
+        }
+        else
+        {
+            h1.className="bg-dark text-danger ps-3 border border-5 rounded-pill";
+        }
+        document.getElementById('h1').value=h1;
+    }
+    function color1()
+    {
+        var h1_1 = document.getElementById('h1-1');
+        if(h1_1.className=="bg-dark text-info ps-3 border border-5 rounded-pill")
+        {
+            h1_1.className="bg-warning text-dark ps-3 border border-5 border-info";
+        }
+        else
+        {
+            h1_1.className="bg-dark text-info ps-3 border border-5 rounded-pill";
+        }
+        document.getElementById('h1-1').value=h1_1;
+    }
+    function color2()
+    {
+        var h1_2 = document.getElementById('h1-2');
+        if(h1_2.className=="bg-dark text-warning ps-3 border border-5 rounded-pill")
+        {
+            h1_2.className="bg-warning text-dark ps-3 border border-5 border-info ";
+        }
+        else
+        {
+            h1_2.className="bg-dark text-warning ps-3 border border-5 rounded-pill";
+        }
+        document.getElementById('h1-2').value=h1_2;
+    }
+    function color3()
+    {
+        var h1_3 = document.getElementById('h1-3');
+        if(h1_3.className=="bg-dark text-warning ps-3 border border-5 rounded-pill ")
+        {
+            h1_3.className="bg-warning text-light ps-3 border border-5 border-info rounded-pill";
+        }
+        else
+        {
+            h1_3.className="bg-dark text-warning ps-3 border border-5 rounded-pill ";
+        }
+        document.getElementById('h1-3').value=h1_3;
+    }
+</script>
+</html>

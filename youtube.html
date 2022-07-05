@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+   *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFU7U2h0umyF0P6E_yhTX45sGgPEQAbGaJ4g&usqp=CAU');
+            background-size: cover;
+            background-repeat:on-repeat;
+    }
+    h1{
+        text-align: center; 
+        margin-bottom: 20px; 
+        background-color: black;
+        color:red;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 80px;
+        text-decoration:underline greenyellow;
+    }
+    h2{
+        text-align: center;
+        margin-top: 20px; 
+        margin-bottom: 30px; 
+        padding-bottom: 10px;
+        background-color: black;
+        color:red;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 60px;
+        text-decoration:underline greenyellow;
+        border: 3px solid white;
+    }
+    ol{
+        margin: 0;
+        padding:0;
+        background-color: #333;
+    }
+    li{
+        float: left;
+        font-weight: 900;
+
+    }
+    .nav-link{
+        flex: 1;
+        text-align: left;
+        background-color: dimgray;
+        width: 100%;
+        border-bottom: 2px solid white;
+    }
+    .nav-link ,ol ,li{
+        display: inline-block;
+        position: relative;
+        padding: 5px 16px;
+    }
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 6px 20px;
+        text-decoration: none;
+    }
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align:left;
+    }
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .dropdown-content a:hover {
+    background-color: orangered;
+    transform: scale(1.12);
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    nav-link ,ol ,li ,a{
+        color: white;
+        text-decoration:none;
+        font-size: 13px;
+        border-radius: 40px;
+    }
+    li:hover{
+        background-color:darkslategrey;
+        transform: scale(1.16);
+    }
+    table {
+        margin-right: 20px;
+        margin-left: 90px;
+        padding: 2px;
+        background-color:black;
+        color:white;
+        border: 20px solid black;
+    }
+    th{
+        font-size: 30px;
+    }
+    th,td{
+        padding: 10px;
+        padding-right: 40px;
+        padding-left: 40px;
+        border: 2px solid blue;
+    }
+    tr:hover{
+        background-color:blue;
+        transform: scale(1.05);
+    }
+    img{
+        margin-left:400px;
+        margin-bottom: 50px;
+        outline: 6px solid yellow;
+    }
+    </style>
+    <script>
+        var type='off';  
+        function image()
+        {
+            if(type=='on')
+            {
+                type='off';
+                document.getElementById('img').src='https://images.ctfassets.net/23aumh6u8s0i/4JKsesGb6RuQLsjVnUmB0j/0bcbb36344547e9ab698b9077f80170a/16_brightness';
+            }
+            else
+            {
+                type='on';
+                document.getElementById('img').src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwGPF8X5lgcLBtUZUXV9kPPpfw7IuIsTq3uQ&usqp=CAU';
+            }
+            document.getElementById('img').value=type;
+        }
+    </script>
+    <body>
+    <div class="nav-link">
+        <ol>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">ACTIVITY</a></li>
+        <li  class="dropdown"><a href="">COUSES</a>
+            <div class="dropdown-content">
+                <a href="">BCA</a>
+                <a href="">MBA</a>
+                <a href="">MCA</a>
+                <a href="">M.Tech</a>
+                <a href="">Other</a>
+            </div>
+        </li>
+    </ol>
+    </div>
+    <div>
+    <h2>Please subscribe<br> my chennal</h2>
+    <img src="https://images.ctfassets.net/23aumh6u8s0i/4JKsesGb6RuQLsjVnUmB0j/0bcbb36344547e9ab698b9077f80170a/16_brightness" id="img" onmouseout="image()" style="width: 400px;">
+</div>
+    <h1><b>TIME TABLE</b></h1>
+    <table>
+        <tr>
+        <th colspan="7">Time Table-BCA-1 Sem-(Session:Jan 2022),2 Shift</th>
+        </tr>
+        <tr>
+        <td align="center"><b>Time<br>/<br>Days</b></td>
+        <td align="center">1st<br>11:30-12:30</td>
+        <td align="center">2nd<br>12:30-1:30</td>
+        <td align="center">3th<br>1:30-2:30</td>
+        <td align="center">4th<br>2:30-3:00</td>
+        <td align="center">5th<br>3:00-4:00</td>
+        <td align="center">6th<br>4:00-5:00</td>
+        </tr>
+        <tr>
+        <td align="center">Monday</td>
+        <td align="center">TC</td>
+        <td align="center">WT</td>
+        <td align="center">FITC</td>
+        <td rowspan="6" align="center">Break TIME.</td>
+        <td align="center">FITC Lab</td>
+        <td align="center">C</td>
+        </tr>
+        <tr>
+        <td align="center">Tuesday</td>
+        <td align="center">WT</td>
+        <td align="center">WT Lab</td>
+        <td align="center">DM</td>
+        <td align="center">C</td>
+        <td align="center">C Lab</td>
+        </tr>
+        <tr>
+        <td align="center">Wednessday</td>
+        <td align="center">WT</td>
+        <td align="center">FITC</td>
+        <td align="center">DM</td>
+        <td align="center">FITC Lab</td>
+        <td align="center">TC</td>
+        </tr>
+        <tr>
+        <td align="center">Thursday</td>
+        <td align="center">WT</td>
+        <td align="center">C</td>
+        <td align="center">DM</td>
+        <td align="center">C Lab</td>
+        <td align="center">TC</td>
+        </tr>
+        <tr>
+        <td align="center">Friday</td>
+        <td align="center">WT Lab</td>
+        <td align="center">FITC</td>
+        <td align="center">DM</td>
+        <td align="center">FITC</td>
+        <td align="center">TC</td>
+        </tr>
+        <tr>
+        <td align="center">Saturday</td>
+        <td align="center">FICT</td>
+        <td align="center">WT</td>
+        <td align="center">C</td>
+        <td align="center">Bridge Course</td>
+        <td align="center">C LAB</td>
+        </tr>
+        </table>
+</body>
+</html>

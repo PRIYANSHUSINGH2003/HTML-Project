@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function call_off()
+        {
+            document.getElementById('bulb').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png';
+        }
+        function call_on()
+        {
+            document.getElementById('bulb').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png';
+        }
+        var type='Trun-off';
+        function callbulb()
+        {
+            if(type=='Trun-on')
+            {
+                type='Trun-off';
+                document.getElementById('img').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png';
+            }
+            else
+            {
+                type='Trun-on';
+                document.getElementById('img').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png';
+            }
+            document.getElementById('btn').value=type;
+        }
+        function validateForm() {
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+    </script>
+    </head>
+    <body>
+        <input type="button" value="Trun off" onclick="call_off()">
+        <img id="bulb" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" style="width:200px">
+        <input type="button" value="Trun on" onclick="call_on()">
+        <br><br><br>
+        <img id="img" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" style="width:200px">
+        <input type="button" value="Trun on" onclick="callbulb()" id="btn">
+        <h2>JavaScript Validation</h2>
+        <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+            Name: <input type="text" name="fname">
+            <input type="submit" value="Submit">
+          </form>
+          
+
+<script>  
+function validateform(){  
+var name=document.myForm.name.value;  
+var password=document.myForm.password.value;  
+  
+if ( name < 5){  
+  alert("Name can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+<body>  
+<form name="myform" method="post" action="" onsubmit="return validateform()" >  
+Name: <input type="text" name="name"><br/>  
+Password: <input type="password" name="password"><br/>  
+<input type="submit" value="submit">  
+</form>  
+</body>
+</html>

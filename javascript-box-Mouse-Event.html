@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript box and MouseEvent</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Javascript box //
+        function warning()
+        {
+            alert ("warning damger you not filled everything");
+            document.write("warning danger you have not filled everything");
+        }
+        function confirmation()
+        {
+            var Val = confirm("Do you want to continue ?");
+            if(Val==true)
+            {
+                document.write("CONTINUED");
+                return true;
+            }
+            else
+            {
+                document.write("NOT CONTINUED");
+                return false;
+            }
+        }
+        function Value()
+        {
+            var Val =prompt("Enter your Name : ","Name");
+            document.write("This is Your Name :"+Val);
+        }
+      //  MouseEvent start //
+        var bulb='Turn-off';
+        function light()
+        {
+            if(bulb == 'Turn-on')
+            {
+                bulb='Turn-off';
+                document.getElementById('bulb').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png';
+            }
+            else
+            {
+                bulb='Turn-on';
+                document.getElementById('bulb').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png';
+            }
+            document.getElementById('bulb').value=bulb;
+        }
+        var bulb1='off';
+        function light1()
+        {
+            if(bulb1=='on')
+            {
+                bulb1='off'
+                document.getElementById('bulb1').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png';
+            }
+            else
+            {
+                bulb1='on';
+                document.getElementById('bulb1').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png';
+            }
+            document.getElementById('bulb1').value=bulb1;
+        }
+        var bulb2='off';
+        function light2()
+        {
+            if(bulb2=='on')
+            {
+                bulb2='off'
+                document.getElementById('bulb2').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png';
+            }
+            else
+            {
+                bulb2='on';
+                document.getElementById('bulb2').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png';
+            }
+            document.getElementById('bulb2').value=bulb2;
+        }
+        var bulb3='off';
+        function light3()
+        {
+            if(bulb3=='on')
+            {
+                bulb3='off'
+                document.getElementById('bulb3').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png';
+            }
+            else
+            {
+                bulb3='on';
+                document.getElementById('bulb3').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png';
+            }
+            document.getElementById('bulb3').value=bulb3;
+        }
+        var bulb4='off';
+        function light4()
+        {
+            if(bulb4=='on')
+            {
+                bulb4='off'
+                document.getElementById('bulb4').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png';
+            }
+            else
+            {
+                bulb4='on';
+                document.getElementById('bulb4').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png';
+            }
+            document.getElementById('bulb4').value=bulb4;
+        }
+        var bulb5='off';
+        function light5()
+        {
+            if(bulb5=='on')
+            {
+                bulb5='off'
+                document.getElementById('bulb5').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png';
+            }
+            else
+            {
+                bulb5='on';
+                document.getElementById('bulb5').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png';
+            }
+            document.getElementById('bulb5').value=bulb5;
+        }
+        var bulb6='off';
+        function light6()
+        {
+            if(bulb6=='on')
+            {
+                bulb6='off'
+                document.getElementById('bulb6').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png';
+            }
+            else
+            {
+                bulb6='on';
+                document.getElementById('bulb6').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png';
+            }
+            document.getElementById('bulb6').value=bulb6;
+        }
+        var bulb7='off';
+        function light7()
+        {
+            if(bulb7=='on')
+            {
+                bulb7='off'
+                document.getElementById('bulb7').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png';
+            }
+            else
+            {
+                bulb7='on';
+                document.getElementById('bulb7').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png';
+            }
+            document.getElementById('bulb7').value=bulb7;
+        }
+        var bulb8='off';
+        function light8()
+        {
+            if(bulb8=='on')
+            {
+                bulb8='off'
+                document.getElementById('bulb8').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png';
+            }
+            else
+            {
+                bulb8='on';
+                document.getElementById('bulb8').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png';
+            }
+            document.getElementById('bulb8').value=bulb8;
+        }
+        var mywindow;
+        function openwindow()
+        { 
+            mywindow= window.open("https://www.google.com","","width=600px,height=10px,left=920px");
+        }
+        function closewindow()
+        { 
+            mywindow.close();
+        }
+        
+        </script>    
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7It0EvGYmT5qn13URCC41JuP7NxKqhzIBKQ&usqp=CAU">
+    <div class="container-fluid bg-dark mt-2 mb-2">
+        <div class="row">
+            <div class="col">
+        <ul class="list-inline">
+            <li class="list-inline-item pe-3 pt-3 h5"><a href="#" class="text-decoration-none text-warning"> Home</a></li>
+            <li class="list-inline-item pe-3 pt-3 h5"><a href="#" class="text-decoration-none text-danger">About</a></li>
+            <li class="list-inline-item pe-3 pt-3 h5 "><a href="#" class="text-decoration-none text-light">Activity</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <div class="input-group mt-3">
+        <div class="input-group-text bg-dark text-info"onclick="closewindow()"id="btnsearch">CloseSearching</div>
+        <div class="input-group-text bg-dark text-info"onclick="openwindow()"id="btnsearch">OpenSearching</div>
+        <input type="text" class="form-control text-light bg-dark"placeholder="Searching"aria-describedby="btnsearch">
+    </div>
+    </div>  
+    </div>
+    </div>
+    <div class="container-fluid">
+    <div class="container-fluid pt-3 bg-danger">
+    <h2 class=" display-4 text-info bg-dark fw-bold text-center pt-2">Javascript box</h2>
+    <p></p>
+    <form>
+    <input type="button" value="click me" onclick="warning();" class="btn-info ms-5">
+    <input type="button" value="click me" onclick="confirmation();" class="btn-secondary ms-5">
+    <input type="button" value="click me" onclick="Value();" class="btn-lg btn-success ms-5">
+    </form>
+</div>
+<div class="container mt-5 text-center bg-warning border border-5 border-primary">
+    <br>
+    <h1 class="text-danger fw-bold bg-dark py-2 display-3 border border-5 border-info">Mouse Event</h1>
+    <div class="row">
+        <div class="col">
+    <img id="bulb" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" onmousedown="light()" style="width:200px" class="img-thumbnail border border-5 border-dark"> 
+    <h3 class="text-warning bg-danger fw-bold">onmousedown</h3>
+    </div>
+    <div class="col">
+    <img id="bulb1" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" onmouseup="light1()" style="width:200px" class="img-thumbnail border border-5 border-dark">
+    <h3 class="text-warning bg-danger fw-bold">onmouseup</h3>
+    </div>
+    <div class="col">
+    <img id="bulb2" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" onmouseout="light2()" style="width:200px" class="img-thumbnail border border-5 border-dark">
+    <h3 class="text-warning bg-danger fw-bold">onmouseout</h3>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col">
+    <img id="bulb3" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" onmouseover="light3()" style="width:200px" class="img-thumbnail border border-5 border-dark">
+    <h3 class="text-warning bg-danger fw-bold">onmouseover</h3>
+    </div>
+    <div class="col">
+    <img id="bulb4" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" oncontextmenu="light4()" style="width:200px" class="img-thumbnail border border-5 border-dark">
+    <h3 class="text-warning bg-danger fw-bold">oncontextmenu</h3>
+    </div>
+    <div class="col">
+    <img id="bulb5" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" onmousemove="light5()" style="width:200px" class="img-thumbnail border border-5 border-dark">
+    <h3 class="text-warning bg-danger fw-bold">onmousemove</h3>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col">
+    <img id="bulb6" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" onmousewheel="light6()" style="width:200px" class="img-thumbnail border border-5 border-dark">
+    <h3 class="text-warning bg-danger fw-bold">onmousewheel</h3>
+    </div>
+    <div class="col">
+    <img id="bulb7" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" onmouseenter="light7()" style="width:200px" class="img-thumbnail border border-5 border-dark">
+    <h3 class="text-warning bg-danger fw-bold">onmouseenter</h3>
+    </div>
+    <div class="col">
+    <img id="bulb8" src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png" ondblclick="light8()" style="width:200px" class="img-thumbnail border border-5 border-dark">
+    <h3 class="text-warning bg-danger fw-bold">ondblclick</h3>
+    </div>
+</div>
+</div> 
+</div>
+    </body>
+    </html>
